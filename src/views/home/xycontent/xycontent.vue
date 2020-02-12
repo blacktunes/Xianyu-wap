@@ -1,15 +1,16 @@
 <template>
-  <div
-  class="headerlink"
-  >
+  <div class="xyword">
     <router-link
-      class="headerrouter"
+      class="headerroutermin"
       tag="div"
       v-for="page of view"
       :key="page.id"
-      :to="page.name"
+      :to="'/' + page.name + '/' + page.title"
     >
-      {{page.name}}
+    <div>
+      <div class="wordtitle">{{page.title}}</div>
+      <div class="wordtitle">{{page.content}}</div>
+    </div>
     </router-link>
   </div>
 </template>
@@ -21,20 +22,22 @@ export default {
     return {
     }
   },
+  props: {
+    view: Array
+  },
   methods: {
   }
 }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-.headerlink
+.xycontent
+  margin-top 5px
   overflow hidden
   display flex
-  line-height 20px
-  background rgb(238, 238, 238)
+  line-height 50px
+  background red
   font-size 14px
   color #303133
-  .headerrouter
-    float: right
-    width 15%
+  height 3000px
 </style>
