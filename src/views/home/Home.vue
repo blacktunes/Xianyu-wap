@@ -2,6 +2,7 @@
   <div>
     <xyheader></xyheader>
     <xycontent></xycontent>
+    <div class="test"></div>
   </div>
 </template>
 
@@ -20,5 +21,6 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-
+.test
+  height 1000px
 </style>
