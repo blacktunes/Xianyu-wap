@@ -25,7 +25,6 @@
       v-for="page of view"
       :key="page.id"
       :to="page.path || page.name"
-      @click="handlecss(page.name)"
       :ref="page.name"
     >
       {{page.name}}
@@ -38,6 +37,7 @@
 <script type="text/ecmascript-6">
 export default {
   name: 'Xyheader',
+  // props:{},
   data () {
     return {
       overlow: true,
@@ -109,6 +109,10 @@ export default {
       color black
   .location
     color black
+    background-color rgb(190, 190, 190)
+    border-bottom-style solid
+    border-bottom-width 2px
+    border-bottomcolor rgb(153, 153, 153)
 .headerlinkmin
   z-index 2
   position fixed
@@ -131,7 +135,10 @@ export default {
     color rgb(144, 147, 153)
   .location
     color black
-
+    background-color rgb(190, 190, 190)
+    border-bottom-width 2px
+    border-bottom-style solid
+    border-bottomcolor rgb(153, 153, 153)
 .slide-down-enter, .slide-down-leave-to
   transform translate3d(0, -100%, 0)
 .slide-down-enter-to, .slide-down-leave

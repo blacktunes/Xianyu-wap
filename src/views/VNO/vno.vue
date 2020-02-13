@@ -11,7 +11,7 @@ import Xyheader from '@/common/header/xyheader'
 import Xycontent from './xycontent/xycontent'
 
 export default {
-  name: 'mood',
+  name: 'mno',
   components: {
     Xyheader,
     Xycontent
