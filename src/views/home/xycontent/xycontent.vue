@@ -30,10 +30,10 @@
 <script type="text/ecmascript-6">
 
 export default {
-  max: 500,
   name: 'Xyheader',
   data () {
     return {
+      max: 500,
       view: [{
         id: '01',
         name: 'Home',
